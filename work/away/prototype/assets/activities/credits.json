@@ -1,0 +1,72 @@
+{
+  "louvre": {
+    "file": "assets/activities/louvre.jpg",
+    "source": "https://en.wikipedia.org/wiki/Louvre",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/330px-Louvre_Museum_Wikimedia_Commons.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "orsay": {
+    "file": "assets/activities/orsay.jpg",
+    "source": "https://en.wikipedia.org/wiki/Mus%C3%A9e_d'Orsay",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Mus%C3%A9e_d%27Orsay%2C_North-West_view%2C_Paris_7e_140402.jpg/330px-Mus%C3%A9e_d%27Orsay%2C_North-West_view%2C_Paris_7e_140402.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "orangerie": {
+    "file": "assets/activities/orangerie.jpg",
+    "source": "https://en.wikipedia.org/wiki/Mus%C3%A9e_de_l'Orangerie",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG/330px-Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "sacre-coeur": {
+    "file": "assets/activities/sacre-coeur.jpg",
+    "source": "https://en.wikipedia.org/wiki/Sacr%C3%A9-C%C5%93ur%2C_Paris",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Le_sacre_coeur.jpg/330px-Le_sacre_coeur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "abreuvoir": {
+    "file": "assets/activities/abreuvoir.jpg",
+    "source": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  },
+  "montmartre": {
+    "file": "assets/activities/montmartre.jpg",
+    "source": "https://en.wikipedia.org/wiki/Mus%C3%A9e_de_Montmartre",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mus%C3%A9e_de_Montmartre_-_maison_du_Bel_Air.jpg/330px-Mus%C3%A9e_de_Montmartre_-_maison_du_Bel_Air.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "tertre": {
+    "file": "assets/activities/tertre.jpg",
+    "source": "https://en.wikipedia.org/wiki/Place_du_Tertre",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Restaurants%2C_Place_du_Tertre%2C_Paris_30_September_2019.jpg/330px-Restaurants%2C_Place_du_Tertre%2C_Paris_30_September_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "vosges": {
+    "file": "assets/activities/vosges.jpg",
+    "source": "https://en.wikipedia.org/wiki/Place_des_Vosges",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Place_des_Vosges_vue_a%C3%A9rienne.png/330px-Place_des_Vosges_vue_a%C3%A9rienne.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "marais": {
+    "file": "assets/activities/marais.jpg",
+    "source": "https://en.wikipedia.org/wiki/The_Marais",
+    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Paris_Hotel_de_Sens_dsc04028.jpg/330px-Paris_Hotel_de_Sens_dsc04028.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "bretagne": {
+    "file": "assets/activities/bretagne.jpg",
+    "source": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  },
+  "market": {
+    "file": "assets/activities/market.jpg",
+    "source": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  },
+  "montorgueil": {
+    "file": "assets/activities/montorgueil.jpg",
+    "source": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  },
+  "bakery": {
+    "file": "assets/activities/bakery.jpg",
+    "source": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  },
+  "bistro": {
+    "file": "assets/activities/bistro.jpg",
+    "source": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=180&h=180&q=85",
+    "note": "Illustrative street or food photograph"
+  }
+}

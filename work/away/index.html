@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Away · Designing a travel planning app</title>
+<link rel="stylesheet" href="style.css?v=20261126-case-study">
+</head>
+<body>
+<a class="skip" href="#overview">Skip to case study</a>
+<div class="layout"><main>
+<section id="overview"><h1>Designing a travel planning app</h1></section>
+<section id="persona" class="persona"><div><h2>Meet Surbhi</h2><ul><li>PM</li><li>Solo traveller</li><li>First international trip</li></ul></div><img class="persona-portrait" src="assets/surabhi-portrait.png" alt="Illustration of Surabhi holding a passport and boarding pass"></section>
+<section id="journey"><h2>How does travel planning usually happen</h2>
+<ol class="research-timeline">
+<li><h3>Decide where you want to go</h3><p>Generally happens while scrolling Instagram, through recommendations from friends, or from ChatGPT.</p></li>
+<li><h3>Figure out visa</h3><p>Figure out the process, collect documents, book appointments.</p></li>
+<li><h3>Decide where you want to go (exactly)</h3><p>Considering an international trip, one might have fixated on the country.</p></li>
+<li><h3>Find things to do in those places</h3><p>Some iconic places would be remembered, but a lot of it gets lost in Instagram saves.</p></li>
+<li><h3>Book stay and commute</h3><p>Usually booked from different websites; documents get lost in emails, screenshots, and DMs.</p></li>
+<li><h3>Book tour tickets</h3></li>
+</ol></section>
+<section id="pain-points"><h2>Why is it so tough, man?</h2><ul><li>Visa process is usually tedious.</li><li>Your bookings for stays, commute, or experiences get lost in emails and screenshots.</li><li>Recommendations or bucket list items sometimes get lost in Instagram saves or in your memory.</li></ul></section>
+
+<section id="personal-experience"><h2>What I used it for</h2><p>A while ago, I went to Europe for the first time. ChatGPT turned out to be a saviour.</p><ul>
+<li><strong>Trip planning &amp; logistics:</strong> Understanding visa requirements, building itineraries, coordinating transportation and planning around existing bookings.</li>
+<li><strong>Discovery &amp; recommendations:</strong> Finding attractions, local experiences, food and shopping options based on my preferences, location and budget.</li>
+<li><strong>Decision-making &amp; validation:</strong> Comparing alternatives, assessing itinerary feasibility and making informed booking decisions.</li>
+<li><strong>On-trip assistance &amp; replanning:</strong> Navigating unexpected weather conditions, safety concerns, last-minute changes and time-sensitive situations.</li></ul>
+<p>Here are some of the things I had asked at that time.</p><a href="assets/chatgpt-travel-questions.png" target="_blank" rel="noopener" aria-label="Open examples of travel questions at full size"><img class="case-study-image" src="assets/chatgpt-travel-questions.png" alt="Examples of questions asked during the Europe trip, grouped by travel planning needs" loading="lazy"></a></section>
+<section id="contextual-help"><h2>Good thing about ChatGPT</h2><p>It is highly contextual, so I can find answers to very, very specific questions.</p><h2 class="section-followup">But,</h2><p>This is where the experience falls short:</p><ul>
+<li><strong>Fragmented information:</strong> Useful recommendations were scattered across conversations.</li>
+<li><strong>Lack of persistent itinerary:</strong> Answers didn’t automatically become part of a structured travel plan.</li>
+<li><strong>Manual context sharing:</strong> You had to communicate your bookings, location and constraints.</li>
+<li><strong>Reactive assistance:</strong> You had to know what questions to ask.</li>
+<li><strong>No visual understanding of the trip:</strong> Spatial relationships, schedules and alternatives were largely communicated through text.</li></ul></section>
+<section id="problems"><h2>Problems to solve:</h2><h3>Information gets scattered</h3><ul><li>Recommendations get lost in Instagram saves and screenshots.</li><li>Bookings are scattered—in emails, file managers and different travel apps.</li><li>Answers to your specific questions get lost in ChatGPT history.</li></ul><h3 class="section-followup">Reactive assistance</h3><p>I remember asking ChatGPT what’s the best time to visit the Eiffel Tower. It said sunset, which was supposed to be at 9 PM. I never could have guessed. A good travel app shouldn’t need me to ask this.</p></section>
+<section id="solution"><h2>Solution</h2><ul><li>Streamlined visualisation of the whole trip to easily find all kinds of information.</li><li>Assistance — provide detailed, relevant information about decision-making factors.</li></ul></section>
+
+<section id="design-explorations"><h2>Developing the solution</h2>
+<article class="exploration"><div><h3>A city guide you can plan from</h3><p>The article-led exploration groups recommendations into sights, neighbourhoods, food and outdoor moments. Each suggestion has an action to add it to the itinerary.</p><p>This connects discovery with planning, instead of leaving recommendations in a separate conversation or saved post.</p></div><figure><a href="assets/iteration-city-guide.png" target="_blank" rel="noopener"><img src="assets/iteration-city-guide.png" alt="City guide exploration with grouped recommendations and add-to-itinerary actions" loading="lazy"></a><figcaption>City guide exploration · Open to see the full screen</figcaption></figure></article>
+<article class="exploration"><div><h3>Keep the city within the trip</h3><p>The next exploration adds the surrounding cities, a destination cover and a horizontal date selector above the guide.</p><p>The city’s recommendations sit alongside the wider route and travel dates, giving the traveller more context while planning.</p></div><figure><a href="assets/iteration-city-context.png" target="_blank" rel="noopener"><img src="assets/iteration-city-context.png" alt="City planning exploration showing the trip title, neighbouring cities, date selector and Paris guide" loading="lazy"></a><figcaption>City and date context · Open to see the full screen</figcaption></figure></article>
+<article class="exploration"><div><h3>Bring the plan into one timeline</h3><p>The trip timeline exploration brings visa readiness, city stops and daily activities into the same view. Hotel and ticket actions appear beside the relevant plan item.</p><p>Unplanned days remain visible, with suggestions for things to do. This brings assistance closer to the moment a traveller needs to make a decision.</p><p class="caption">This Figma exploration still includes placeholder imagery and repeated button labels.</p></div><figure><a href="assets/iteration-trip-timeline.png" target="_blank" rel="noopener"><img src="assets/iteration-trip-timeline.png" alt="Trip timeline exploration with visa prompt, hotel and ticket actions, free days and the next city" loading="lazy"></a><figcaption>Trip timeline exploration · Open to see the full screen</figcaption></figure></article>
+</section>
+<section id="working-prototype"><h2>Try the experience</h2><p>The working prototype takes the traveller from choosing destinations and dates to planning each city and reviewing the trip. Activities selected during city planning appear in the route overview.</p><p><a href="prototype/index.html" target="_blank" rel="noopener">Open the interactive prototype</a></p><div class="prototype-stage"><iframe src="prototype/index.html?screen=home&amp;embed=1" title="Away interactive travel planning prototype" loading="lazy"></iframe></div><p class="caption">Start with Create a trip, choose cities and dates, then plan each stop. This is a demo with browser-local saving; booking actions and visa assistance shown in the Figma explorations are not live integrations.</p></section>
+</main></div>
+</body>
+</html>
