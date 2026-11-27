@@ -1,0 +1,6 @@
+.home-tap-hint{position:absolute;width:156px;height:90px;z-index:25;pointer-events:none;color:#334d68}
+.home-tap-hint[hidden]{display:none}
+.home-tap-hint svg{display:block;overflow:visible}
+.home-tap-hint path{stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.home-tap-hint .sketch-echo{opacity:.35;stroke-width:1.1}
+.home-tap-hint>span{position:absolute;top:14px;left:-24px;padding:1px 7px;background:#fcf9f0e8;border-radius:8px;font:24px/1.2 'Bradley Hand','Comic Sans MS',cursive;white-space:nowrap;transform:rotate(-8deg)}

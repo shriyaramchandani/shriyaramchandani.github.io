@@ -1,0 +1,66 @@
+/* Current documentation: 19:570. Keep fidelity fixes scoped to mapped screens. */
+.figma-home-phone :is(h1,h2,h3,h4),.destination-picker-phone :is(h1,h2,h3,h4),.date-picker-phone :is(h1,h2,h3,h4){font-optical-sizing:none;font-variation-settings:'opsz' 14}
+.phone.figma-home-phone,
+.phone.destination-picker-phone,
+.phone.date-picker-phone{background:#fcf9f0;background-image:none;border:0;width:393px;max-width:100%;color:#28364a;font-optical-sizing:none;font-variation-settings:'opsz' 14}
+.destination-picker-phone .footer,.date-picker-phone .footer{background:#fcf9f0;background-image:none;backdrop-filter:none;height:92px;padding:15px 20px 23px;border-top:1px solid #e3ddce}
+.destination-picker-phone .footer .primary,.date-picker-phone .footer .primary{height:53px;border-radius:999px;font-size:16px;line-height:21px;font-weight:700;letter-spacing:0;padding:0 12px}
+.phone>.status{height:44px;align-items:center;padding:3px 14.5px 0 19.89px;font-size:13px;font-weight:700;line-height:17px}
+.phone>.status>span{width:54px;text-align:center}
+.phone>.status>img{display:block;flex:none;width:67px;height:11.5px}
+.home-status{display:flex;align-items:center;justify-content:space-between;padding:3px 14.5px 0 19.89px}
+.home-status>span{position:static;width:54px;text-align:center;font-size:13px;font-weight:700;line-height:17px;color:#28364a}
+.home-status>img{position:static;width:67px;height:11.5px}
+.home-welcome .home-create{margin-top:0}
+.figma-home{min-height:780px}
+.figma-home h3{line-height:24px}
+.home-interests{height:200px}
+.home-interest>span{line-height:19px}
+.home-popular-rail{margin:0}
+.destination-picker-phone header{height:62px;padding:18px 20px 8px;align-items:flex-start}
+.destination-picker-phone .destination-content{padding-top:12px}
+.destination-picker-phone .destination-content>h2{font-size:30px;line-height:36px;font-weight:600;margin:0 0 26px;letter-spacing:-1.2px}
+.destination-picker-phone .city{height:82px;border:1px solid #e0dacd;border-radius:20px;padding:12px;gap:12px;background:#fffdf7}
+.destination-picker-phone .city>.city-photo{width:56px;height:56px;border-radius:12px;object-fit:cover;flex:none}
+.destination-picker-phone .city b{font-size:16px;line-height:21px;font-weight:700}
+.destination-picker-phone .city small{font-size:12px;line-height:16px;color:#817b89;margin-top:3px}
+.destination-picker-phone .destination-search .search{height:55px;border:1px solid #e0dacd;border-radius:999px;padding:0 18px;background:#fffdf7;color:#28364a;font-size:16px;line-height:21px;margin:16px 0 18px}
+.destination-picker-phone .search::placeholder{color:#5e5e5e;opacity:1}
+.destination-picker-phone .destination-content .city:after{color:#334d68}
+.destination-picker-phone .selected-cities-heading h3{font-weight:600;line-height:23px}
+.destination-picker-phone .selected-cities{margin-bottom:30px}
+.destination-picker-phone .selected-city-card{height:70px;border-color:#e0dacd;border-radius:20px}
+.destination-picker-phone .selected-city-name b{font-weight:700;line-height:18px}
+.destination-picker-phone .selected-city-name small{font-size:11px;line-height:16px}
+.date-picker-phone header{height:69px;padding:18px 20px 8px;align-items:flex-start}
+.date-picker-phone .content{padding:12px 20px 0}
+.date-picker-phone .content>h2{font-size:30px;font-weight:600;line-height:36px;letter-spacing:-1.2px;margin:0}
+.date-picker-phone .calendar{width:100%;margin:20px 0 24px;padding:12px 12px 14px;background:#fffdf7;overflow:hidden;border:1px solid #ede9df}
+.date-picker-phone .calendar-weekdays{height:25px;color:#817b89}
+.date-picker-phone .calendar-weekdays>span{padding:0;line-height:17px;display:grid;place-items:center}
+.date-picker-phone .calendar-cell{height:42px;margin:0;position:relative;background:none;border-radius:0}
+.date-picker-phone .calendar-cell.in-range:before{content:'';position:absolute;inset:4px 0;background:#e2e9ee;border-radius:0}
+.date-picker-phone .calendar-cell.range-start:before{left:50%}
+.date-picker-phone .calendar-cell.range-end:before{right:50%}
+.date-picker-phone .calendar-day{position:relative;z-index:1;width:34px;height:34px;font-size:14px;font-weight:400;line-height:14px}
+.date-picker-phone .calendar-day.endpoint{box-shadow:none}
+.date-picker-phone .calendar-days{margin-left:-13px;margin-right:-13px;padding:0 13px}
+.date-picker-phone .calendar-cell.in-range:nth-child(7n+1):before{left:-13px}
+.date-picker-phone .calendar-cell.in-range:nth-child(7n):before{right:-13px}
+.figma-planning-phone .planning-footer{flex-wrap:wrap;row-gap:8px}
+.planning-footer .planning-date-hint{flex:0 0 100%;margin:0;text-align:center;color:#817b89;font-size:12px;line-height:18px;font-weight:400}
+.figma-planning-phone:has(.planning-date-hint) .figma-planning{padding-bottom:140px!important}
+.destination-picker-phone .cities .city:disabled{opacity:1;cursor:default}
+.figma-planning .planning-cover>img[src$="amsterdam-night.jpg"],.trip-city-cover .trip-cover-photo[src$="amsterdam-night.jpg"]{object-position:center 55%}
+.trip-city-cards{position:relative;isolation:isolate}
+.trip-city-cards::before{content:'';position:absolute;left:25px;top:96px;bottom:96px;border-left:2px dotted #aeb9c2;pointer-events:none;z-index:0}
+.trip-city-cards>.trip-stop{position:relative;z-index:1}
+.trip-city-cards:has(.is-open)>.trip-stop:not(:last-child)::after{display:none}
+.trip-city-cards:has(>.trip-stop:only-child)::before{display:none}
+.trip-cover-control{clip-path:inset(-12px -12px -60px -90px round 0 16px 0 0)}
+.trip-suggestion-rail>button[aria-pressed]::after{content:'';position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:6px;display:grid;place-items:center;background:#0006 url('assets/booking/add-imgPlus.svg') center/24px 24px no-repeat;backdrop-filter:blur(1px);pointer-events:none}
+.trip-suggestion-rail>button[aria-pressed=true]::after{content:'✓';background:#334d68;color:white;font-size:16px;line-height:1}
+.trip-itinerary>.itinerary-day-heading,.trip-itinerary>.itinerary-free-days{position:relative;z-index:1;background:#fcf9f0;box-shadow:0 -6px 0 #fcf9f0,0 6px 0 #fcf9f0}
+
+/* Home supplies its own Figma status bar inside the screen. */
+.phone:has(.figma-home)>.status{display:none}

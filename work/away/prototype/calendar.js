@@ -4,6 +4,7 @@ function parseDay(s){return new Date(s+'T12:00:00')}
 function dateLabel(s){return s?parseDay(s).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}):''}
 function chevron(right=false){return `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${right?'m9 18 6-6-6-6':'m15 18-6-6 6-6'}"/></svg>`}
 function calendarPicker(){
+ if(!state.datesInitialized){state.start='2026-12-01';state.end='2026-12-15';state.datesInitialized=true;calendarMonth=new Date(2026,11,1)}
  if(!calendarMonth){const d=state.start?parseDay(state.start):new Date();calendarMonth=new Date(d.getFullYear(),d.getMonth(),1)}
  const draftStart=state.start,draftEnd=state.end;
  const month=calendarMonth;const today=localDate(new Date());const first=(month.getDay()+6)%7;const last=new Date(month.getFullYear(),month.getMonth()+1,0).getDate();const count=Math.ceil((first+last)/7)*7;

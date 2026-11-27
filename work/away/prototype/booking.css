@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap');
+#booking-layer{position:absolute;inset:0;pointer-events:none;z-index:35;font-family:'DM Sans',sans-serif;font-optical-sizing:none;font-variation-settings:'opsz' 14}
+#booking-layer button,#booking-layer input,#booking-layer label{font-family:inherit;font-optical-sizing:none;font-variation-settings:'opsz' 14}
+.booking-fab{position:absolute;right:16px;bottom:25px;width:61px;height:61px;border-radius:65.067px;background:#334d68;box-shadow:0 4px 24px #00000073;display:grid;place-items:center;pointer-events:auto;padding:0}
+.booking-fab>img{display:block;flex:none}
+.booking-backdrop{position:absolute;inset:0;pointer-events:auto;background:#0000004d;backdrop-filter:blur(6px);border-radius:inherit}
+.booking-backdrop~.booking-fab{pointer-events:none}
+.booking-sheet{position:absolute;top:calc(100% - 540px);bottom:0;left:0;right:0;background:#fbf9ef;border-radius:24px 24px 0 0;box-shadow:0 4px 34px #00000040;overflow:auto;scrollbar-width:none;padding:26px 16px 40px;color:#1d1d21;overscroll-behavior:contain;max-height:calc(100% - 64px)}
+.booking-sheet h2{font-family:inherit;font-size:24px;line-height:31px;font-weight:600;letter-spacing:0;margin:0 50px 20px 0;font-variation-settings:'opsz' 14}
+.booking-close{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:40px;background:#0000000d;padding:9px;display:grid;place-items:center}
+.booking-close>img{display:block;flex:none}
+.booking-upload-card{height:81px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #4a400e29;border-radius:16px}
+.booking-upload-card p{font-size:18px;line-height:23px;font-weight:600;color:#7b7b7b;margin:0;flex:0 0 95px}
+.booking-upload-button{position:relative;display:flex;align-items:center;gap:5px;height:47px;padding:0 12px;background:#0a0a0a;color:#fff;border-radius:40px;font-size:14px;line-height:21px;font-weight:600;white-space:nowrap;cursor:pointer;overflow:hidden}
+.booking-upload-button>img{display:block;flex:none}
+.booking-upload-button input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.booking-upload-button:focus-visible{outline:3px solid #334d68;outline-offset:4px}
+.booking-search{display:flex;align-items:center;gap:10px;height:55px;margin:20px 0;border:1px solid #e0dacd;border-radius:999px;padding:0 18px;background:#fffdf7}
+.booking-search>img{display:block;flex:none}
+.booking-search input{background:transparent;border:0;padding:0;width:100%;min-width:0;color:#5e5e5e;font-size:16px;line-height:21px;font-weight:400;outline:none}
+.booking-search:focus-within{outline:2px solid #334d68;outline-offset:2px}
+.booking-search input::placeholder{color:#5e5e5e;opacity:.6}
+.booking-place-section{margin:0 0 51px}
+.booking-place-section h3{font-size:16px;font-weight:600;line-height:24px;letter-spacing:0;color:#00000080;margin:0 0 12px}
+.booking-place-rail{display:flex;gap:26px;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none}
+.booking-place{display:flex;flex-direction:column;gap:10px;flex:0 0 113px;width:113px;padding:0;border:0;background:transparent;color:#000b;text-align:left;font-weight:500;font-size:14px;line-height:21px}
+.booking-place-photo{position:relative;display:block;width:113px;height:113px;border-radius:16px;overflow:hidden;background:#0000000d}
+.booking-place-image{position:absolute;display:block;max-width:none;object-fit:cover;transform:translateZ(0);backface-visibility:hidden}
+.booking-place-photo.notre>.booking-place-image{left:0;top:-4px;width:113px;height:154px}
+.booking-place-photo.catacombs>.booking-place-image{left:-26px;top:-4px;width:217px;height:122px}
+.booking-place-photo.arc>.booking-place-image{left:-45px;top:-19px;width:226px;height:150px}
+.booking-place-plus{position:absolute;top:8px;left:81px;width:24px;height:24px;border-radius:6px;background:#0006;backdrop-filter:blur(1px);color:white;display:grid;place-items:center}
+.booking-place-plus>img{display:block;flex:none}
+.booking-place[aria-pressed=true] .booking-place-plus{background:#334d68}
+.booking-error{font-size:13px;line-height:19px;color:#9a2929;margin:12px 0 0}
+.booking-error:empty{display:none}
+.booking-empty{font-size:14px;color:#817b89}
+.ticket-sheet{top:calc(100% - 612px);padding-top:31px;min-height:0}
+.ticket-sheet h2{text-align:center;margin:0 36px;font-size:24px;line-height:31px}
+.booking-ticket-container{position:relative;min-height:449px;margin:23px auto 0;max-width:361px}
+.booking-ticket-demo{position:relative;width:336.75px;max-width:100%;height:449px;margin:auto;font-family:'DM Mono',monospace;font-weight:500;color:#1a2456;font-size:21.682px;line-height:28px}
+.booking-ticket-art{position:absolute;inset:0;width:100%;height:449px;object-fit:cover}
+.ticket-origin{position:absolute;left:60.63px;top:54.21px;white-space:nowrap}
+.ticket-destination{position:absolute;left:60.63px;top:105.7px;white-space:nowrap}
+.ticket-arrow{position:absolute;left:65px;top:82px;display:block}
+.ticket-time{position:absolute;left:59.82px;top:252.96px;width:109.314px;height:42.461px;display:grid;place-items:center;border-radius:12.648px;background:#0006;backdrop-filter:blur(1.807px);color:#fff;white-space:nowrap}
+.booking-upload-preview{display:block;max-width:100%;max-height:449px;object-fit:contain;margin:auto;border-radius:12px}
+.booking-pdf{display:block;width:100%;height:449px;border:0;border-radius:12px;background:white}
+.booking-file-loading{padding:40px 12px;text-align:center;color:#817b89}
+.trip-saved-ticket{display:flex;gap:5px;align-items:flex-start;margin:58px -6px 0}
+.trip-saved-ticket>img{width:83px;height:56px;object-fit:cover;flex:none}
+.trip-saved-ticket h3{font-size:18px;line-height:27px;margin:0 0 9px;font-weight:600;color:#000;letter-spacing:0}
+.trip-saved-ticket button{height:34px;padding:0 16px;background:white;border-radius:26px;font-size:11px;font-weight:600;color:#333}
+/* At the documented post-visa state, the first city starts below the title. */
+.booking-ready-phone .trip-visa{display:none}
+.booking-ready-phone .trip-city-list .figma-trip-heading{margin-bottom:37px}
+.booking-ready-phone .trip-city-cards{gap:0}
+.booking-ready-phone .trip-stop.is-open .trip-city-cover{height:203px}
+.booking-ready-phone .trip-stop.is-open .trip-city-cover:after{display:block;position:absolute;top:163px;left:50%;transform:translateX(-50%);width:calc(100% + 80px);height:88px;background:#fcf9f0;filter:blur(17px);content:''}
+.booking-ready-phone .trip-city-cover .trip-cover-photo{mask-image:none;-webkit-mask-image:none}
+.booking-ready-phone .trip-city-cover{overflow:visible}
+.booking-ready-phone .trip-check-in .itinerary-activity-card>img{width:56px;height:48px;object-fit:none;background:white}
+.booking-ready-phone .trip-itinerary{padding-top:0}
+.booking-ready-phone .itinerary-day-heading{padding:0;margin:0 0 22px;line-height:24px}
+.booking-ready-phone .itinerary-free-days{margin-top:37px}
+.booking-ready-phone .itinerary-day-heading{padding-top:4px;margin-bottom:16px}
+.booking-ready-phone .itinerary-activities{padding-bottom:0}
+.booking-ready-phone .itinerary-free-days{margin-top:44px}
+@media(max-height:620px){.booking-sheet{top:64px}.ticket-sheet{top:64px}.booking-ticket-container{min-height:300px}}
+
+.booking-ready-phone .itinerary-book.is-booked{background:#c9dec9}
+.booking-place-section{margin-bottom:43px}
+.booking-ticket-container:has(.booking-ticket-demo){margin-top:-7px}
+.booking-ticket-container:has(.booking-ticket-demo):before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:42px;width:250px;height:366px;background:#878fc7;opacity:.5;border-radius:16px;filter:blur(17px)}
+.booking-sheet h2:focus{outline:none}
+.booking-fab:has(+.booking-backdrop){visibility:hidden}
+body.embed .phone.booking-ready-phone{border-radius:24px}
+
+.itinerary-activity-card>.booking-checkin-icon{display:grid;place-items:center;flex:0 0 56px;width:56px;height:48px;border-radius:12px;background:white;padding:0}
+.booking-checkin-icon>img{display:block;flex:none;width:24px;height:24px}
+
+.booking-place-photo.city>.booking-place-image{inset:0;width:113px;height:113px}
+.trip-saved-ticket{margin-left:-9px;margin-top:54px}
+.trip-saved-ticket h3{display:flex;align-items:center;gap:6px}
+.trip-saved-ticket h3>img{width:16px;height:16px;display:block;flex:none}
+.trip-itinerary:has(.trip-saved-ticket){padding-bottom:65px}

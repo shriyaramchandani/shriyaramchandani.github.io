@@ -1,0 +1,3 @@
+.destination-content .city-photo{background:#eeece5;transition:opacity 200ms ease}
+.destination-content .city-photo-loading{opacity:0}
+@media(prefers-reduced-motion:reduce){.destination-content .city-photo{transition:none}}
