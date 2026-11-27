@@ -84,3 +84,10 @@ body.embed .phone.booking-ready-phone{border-radius:24px}
 .trip-saved-ticket h3{display:flex;align-items:center;gap:6px}
 .trip-saved-ticket h3>img{width:16px;height:16px;display:block;flex:none}
 .trip-itinerary:has(.trip-saved-ticket){padding-bottom:65px}
+
+/* Animate only when a sheet opens, not when its contents update. */
+.booking-entering .booking-sheet{animation:booking-sheet-enter 380ms cubic-bezier(.22,1,.36,1) both}
+.booking-entering .booking-backdrop{animation:booking-backdrop-enter 300ms ease-out both}
+@keyframes booking-sheet-enter{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes booking-backdrop-enter{from{background-color:transparent;backdrop-filter:blur(0)}to{background-color:#0000004d;backdrop-filter:blur(6px)}}
+@media(prefers-reduced-motion:reduce){.booking-entering .booking-sheet,.booking-entering .booking-backdrop{animation:none}}
