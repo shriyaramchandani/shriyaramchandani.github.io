@@ -9,3 +9,39 @@
 #pain-points{border-bottom:1px solid #e4e3dd;margin-bottom:72px}.case-study-image{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #e4e3dd;margin-top:28px}.section-followup{margin-top:40px}strong{font-weight:600;color:#353630}#solution{border:0;margin-bottom:0}
 
 #solution{border-bottom:1px solid #e4e3dd;margin-bottom:72px}.exploration{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;margin-top:56px;padding-bottom:48px;border-bottom:1px solid #e4e3dd}.exploration:last-child{border:0;padding-bottom:0}.exploration figure{margin:0}.exploration img{display:block;width:100%;height:auto}.exploration figure a{display:block;max-height:620px;overflow:auto;border-radius:16px;border:1px solid #e4e3dd;background:#f8f4ea}.exploration figcaption{font-size:14px;color:#777970;margin-top:12px;line-height:1.5}.prototype-stage{display:flex;justify-content:center;padding:32px;background:#efefe9;border-radius:20px;margin:28px 0 20px}.prototype-stage iframe{display:block;width:400px;max-width:100%;height:810px;border:0;border-radius:24px;background:#fcf9f0}#working-prototype{border:0}@media(max-width:700px){.exploration{grid-template-columns:1fr;gap:24px}.exploration figure{width:min(100%,360px);margin:auto}.prototype-stage{padding:12px}.prototype-stage iframe{height:760px}}
+
+.persona>div{flex:1;min-width:0}.persona h3{margin-top:28px}.persona-portrait{align-self:center}@media(max-width:700px){.persona{align-items:flex-start;flex-direction:column}.persona-portrait{width:220px;max-width:70%;align-self:center}}
+
+.setup-flow{display:flex;flex-wrap:wrap;gap:16px 32px;list-style-position:inside;padding:0;margin:32px 0}.setup-flow li{padding:18px 22px;border:1px solid #e4e3dd;background:#fff;border-radius:12px;font-size:16px}.solution-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:32px 0 48px}.solution-gallery img{display:block;width:100%;height:auto}.solution-gallery.single{grid-template-columns:minmax(0,320px);justify-content:center}@media(max-width:600px){.solution-gallery{grid-template-columns:1fr;max-width:360px;margin-inline:auto}}
+
+/* Connect each step without ambiguous arrows across wrapped rows. */
+.setup-flow{display:flex;flex-wrap:nowrap;align-items:stretch;gap:32px;list-style:none;counter-reset:flow}
+.setup-flow li{flex:1;min-width:0;position:relative;padding:16px;font-size:15px;counter-increment:flow}
+.setup-flow li::before{content:counter(flow) '. ';}
+.setup-flow li:not(:last-child)::after{content:'→';position:absolute;right:-27px;top:50%;transform:translateY(-50%);font-size:23px;color:#777970}
+@media(max-width:900px){.setup-flow{flex-direction:column;gap:30px;max-width:460px}.setup-flow li{flex:auto}.setup-flow li:not(:last-child)::after{content:'↓';right:auto;left:50%;top:auto;bottom:-31px;transform:translateX(-50%);line-height:30px}}
+
+.screen-journey{position:relative;display:grid;grid-template-columns:1fr 1fr;column-gap:22%;align-items:start;margin:40px 0 64px}.journey-screen{display:block;position:relative;z-index:1}.journey-screen img{display:block;width:100%;height:auto}.screen-home{grid-column:1;grid-row:1}.screen-cities{grid-column:2;grid-row:1;margin-top:65%}.screen-dates{grid-column:2;grid-row:2;margin-top:15%}.screen-paris{grid-column:1;grid-row:2;margin-top:30%}.city-explanation{grid-column:2;grid-row:2;align-self:end;margin-bottom:14%;z-index:1}.city-explanation h3{font-size:28px}.journey-arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.screen-journey~.exploration{margin-top:64px}@media(max-width:600px){.screen-journey{column-gap:12%}.city-explanation h3{font-size:19px}.city-explanation p{font-size:14px}.city-explanation{grid-column:1/-1;grid-row:3;margin-top:28px}.journey-arrows{display:none}}
+
+.screen-journey{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.journey-screen{width:100%;min-width:0}.journey-screen img{width:100%;max-width:100%;height:auto;visibility:visible;opacity:1}
+
+/* Soft depth for the case-study screenshots, preserving transparent edges. */
+.journey-screen img,.solution-gallery img,.exploration figure img{filter:drop-shadow(0 8px 14px rgba(35,36,30,.13)) drop-shadow(0 2px 4px rgba(35,36,30,.06))}
+.exploration figure a{overflow:auto;box-shadow:0 8px 24px rgba(35,36,30,.10)}
+
+.journey-arrows{overflow:visible;z-index:0}.journey-arrows g{stroke-width:1.5}.journey-arrows path{vector-effect:non-scaling-stroke}
+
+/* Continue the journey from dates on the left to city planning on the right. */
+.screen-dates{grid-column:1;grid-row:2;margin-top:15%}
+.screen-paris{grid-column:2;grid-row:2;margin-top:65%}
+.city-explanation{grid-column:1;grid-row:2;align-self:end;margin-bottom:20%}
+@media(max-width:600px){.city-explanation{grid-column:1/-1;grid-row:3;margin-top:28px;margin-bottom:0}}
+
+.trip-journey{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:22%;margin-top:64px}.trip-collapsed{grid-column:2;grid-row:1}.trip-expanded{grid-column:1;grid-row:1;margin-top:95%}.trip-explanation{grid-column:2;grid-row:1;align-self:center;margin-top:85%;z-index:1}.trip-explanation h3{font-size:28px}.trip-arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.trip-arrows path{vector-effect:non-scaling-stroke}@media(max-width:600px){.trip-journey{column-gap:12%}.trip-explanation{grid-column:1/-1;grid-row:2;margin-top:28px}.trip-arrows{display:none}}
+
+/* Balance the explanation against the upper part of the city screen. */
+.screen-paris{margin-top:95%}
+.city-explanation{align-self:start;margin-top:calc(100% + 480px);margin-bottom:0}
+@media(max-width:600px){.city-explanation{margin-top:28px;margin-bottom:0}}
+
+.reference-flow{position:relative;width:100%;aspect-ratio:406/1660;container-type:inline-size;margin-top:32px}.reference-screen{position:absolute;left:calc(var(--x)/406 * 100%);top:calc(var(--y)/1660 * 100%);width:calc(var(--w)/406 * 100%);display:block;z-index:1}.reference-screen img{display:block;width:100%;height:auto;filter:drop-shadow(0 3px 5px #25252218)}.reference-copy{position:absolute;width:44%;z-index:1}.reference-copy h3{font-size:3.7cqw;font-weight:600;line-height:1.25;letter-spacing:-.02em;margin-bottom:2cqw}.reference-copy p{font-size:2.45cqw;line-height:1.4;margin-bottom:2cqw}.copy-city{left:41%;top:45.3%}.copy-trip{left:43%;top:72.3%}.reference-arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}#proposed-experience{max-width:900px} @media(max-width:480px){.reference-copy h3{font-size:4cqw}.reference-copy p{font-size:2.8cqw}}
